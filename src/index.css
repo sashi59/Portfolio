@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #0e0b1f;
+  }
+  
+  h2 {
+    @apply text-xl md:text-4xl
+  }
+  
+  p {
+    @apply text-xl tracking-tight leading-relaxed
+  }
+  
+  span {
+    @apply text-blue-500
+  }
+  .bg-primary-color {
+    @apply bg-blue-500
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.shiny-effect {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(23, 96, 233, 0.2), transparent 70%);
+  }
