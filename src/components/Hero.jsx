@@ -6,7 +6,7 @@ import sashi_shd from "../assets/sashi_shd.png";
 import sashi_garder from "../assets/sashi_garder.jpg";
 
 // import myres from "../assets/RESUME.pdf";
-
+import { SiLeetcode } from "react-icons/si";
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
@@ -122,6 +122,12 @@ const Hero = () => {
                 href="https://www.instagram.com/shashi.__shekhar/"
               >
                 <AiOutlineInstagram />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://www.leetcode/u/sashi59/"
+              >
+                <SiLeetcode />
               </motion.a>
             </div>
           </motion.div>
