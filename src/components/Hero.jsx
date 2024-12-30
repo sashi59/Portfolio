@@ -3,6 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import sashi from "../assets/sashi.png";
 import sashi_shd from "../assets/sashi_shd.png";
+import sashi_garder from "../assets/sashi_garder.jpg";
+
 // import myres from "../assets/RESUME.pdf";
 
 import {
@@ -126,24 +128,24 @@ const Hero = () => {
         </motion.div>
 
         <motion.img
-          src={sashi_shd}
-          className="w-[300px] md:w-[450px]"
+          src={sashi_garder}
+          className="w-[400px] md:w-[420px] mt-9 p-2  rounded-3xl"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          style={{ width: "110%" }}
+          // style={{ width: "110%" }}
         />
       </div>
 
+      <p className="text-gray-200 mt-9 text-center text-2xl ">My Tech Stack</p>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 2 }}
-        className="flex flex-row flex-wrap text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
+        className="grid grid-cols-3 md:flex text-7xl px-12 md:px-0 w-full justify-center items-center py-9"
       >
-        <p className="text-gray-200 mr-6">My Tech Stack</p>
         <DiHtml5 className="text-orange-600 mx-2" />
         <DiCss3 className="text-blue-600 mx-2" />
         <DiJavascript1 className="text-yellow-500 mx-2" />

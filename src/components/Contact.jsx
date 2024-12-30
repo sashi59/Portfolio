@@ -36,17 +36,17 @@ const Contact = () => {
 
               <div className="bg-gray-800/40 p-5 rounded-lg">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                  1.5
+                  6mon
                   <span>+</span>
                 </h3>
                 <p className="text-xs md:text-base">
-                  <span>years of experience</span>
+                  <span>of experience</span>
                 </p>
               </div>
 
               <div className="bg-gray-800/40 p-5 rounded-lg">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                  15
+                  9
                   <span>+</span>
                 </h3>
                 <p className="text-xs md:text-base">

@@ -37,7 +37,7 @@ const Navbar = () => {
         className="max-w-[1300px] mx-auto  flex justify-between text-gray-200
         text-xl items-center px-12 h-20"
       >
-        <a href="#"> <span>S.</span> Shashishekhar</a>
+        <a href="/"> <img src="./logo_top.png" alt="Shashishekhar" style={{width:"6rem", height:"5rem"}} /> </a>
         
 
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
