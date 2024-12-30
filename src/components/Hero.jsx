@@ -1,5 +1,4 @@
 import React from "react";
-import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import sashi from "../assets/sashi.png";
@@ -18,12 +17,15 @@ import {
   DiJavascript1,
   DiNodejsSmall,
   DiReact,
+  DiMongodb
 } from "react-icons/di";
+import {  RiTailwindCssLine } from "react-icons/ri";
+import { TbBrandCpp } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative">
+    <div className="mt-24 max-w-[1200px] mx-auto relative" id="about">
       <div className="grid md:grid-cols-2 place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -37,7 +39,7 @@ const Hero = () => {
               1000,
               "Android Developer",
               1000,
-              "Freelancer",
+              "Computer Student",
               1000,
             ]}
             speed={50}
@@ -81,13 +83,21 @@ const Hero = () => {
               }}
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-blue-400 rounded-xl"
               onClick={() => {
-                const link = document.createElement("a");
-                link.href = "./RESUME.pdf"; // Path to your CV file
-                link.download = "Shashishekhar_Resume.pdf"; // Name of the file to be downloaded
-                link.click();
+                // Open a new tab to preview the resume
+                 window.open("./RESUME.pdf", "_blank");
+
+                // // Wait for the preview tab to open before offering the download
+                // if (previewWindow) {
+                //   setTimeout(() => {
+                //     const link = document.createElement("a");
+                //     link.href = "./RESUME.pdf"; // Path to your CV file
+                //     link.download = "Shashishekhar_Resume.pdf"; // Name of the file to be downloaded
+                //     link.click();
+                //   }, 2000); // Adjust timing as necessary
+                // }
               }}
             >
-              Download Resume
+              See Resume
             </motion.button>
 
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-blue-400 z-20">
@@ -131,14 +141,20 @@ const Hero = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 2 }}
-        className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
+        className="flex flex-row flex-wrap text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
       >
         <p className="text-gray-200 mr-6">My Tech Stack</p>
         <DiHtml5 className="text-orange-600 mx-2" />
         <DiCss3 className="text-blue-600 mx-2" />
         <DiJavascript1 className="text-yellow-500 mx-2" />
-        <DiReact className="text-blue-500 mx-2" />
+        <RiTailwindCssLine className="text-blue-500 mx-2" />
+
         <DiNodejsSmall className="text-green-500 mx-2" />
+        <DiReact className="text-blue-500 mx-2" />
+        <DiMongodb className="text-green-400 mx-2" />
+        <AiOutlineGithub className="text-gray-300 mx-2" />
+        <TbBrandCpp className="text-purple-600 mx-2" />
+
       </motion.div>
 
       <div className="absolute inset-0 hidden md:block">

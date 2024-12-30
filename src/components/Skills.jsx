@@ -10,6 +10,8 @@ import {
   DiMongodb,
   DiGithubBadge,
 } from "react-icons/di";
+import {  RiTailwindCssLine } from "react-icons/ri";
+
 import Reveal from "./Reveal";
 
 const skills = [
@@ -18,7 +20,7 @@ const skills = [
     technologies: [
       { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
       { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
-      { name: "Sass", icon: <DiSass className="text-pink-600" /> },
+      { name: "Tailwind", icon: <RiTailwindCssLine className="text-blue-500" /> },
       { name: "Bootstrap", icon: <DiBootstrap className="text-purple-600" /> },
       {
         name: "JavaScript",

@@ -33,3 +33,28 @@ body {
     z-index: 1;
     background: radial-gradient(circle, rgba(23, 96, 233, 0.2), transparent 70%);
   }
+
+  /* Styles for the splash screen */
+.splash-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0e0b1f; /* Optional background color */
+}
+
+/* Rotating animation for the logo */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-logo {
+  width: 130px; /* Adjust as needed */
+  height: 130px; /* Adjust as needed */
+  animation: rotate 3s linear infinite; /* 3 seconds rotation */
+}
