@@ -86,7 +86,7 @@ const Hero = () => {
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-blue-400 rounded-xl"
               onClick={() => {
                 // Open a new tab to preview the resume
-                 window.open("./RESUME.pdf", "_blank");
+                 window.open("./Resume_shashishekhar.pdf", "_blank");
 
                 // // Wait for the preview tab to open before offering the download
                 // if (previewWindow) {
