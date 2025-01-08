@@ -9,11 +9,13 @@ import {
   DiNodejsSmall,
   DiMongodb,
   DiGithubBadge,
+  DiPostgresql,
 } from "react-icons/di";
-import {  RiTailwindCssLine } from "react-icons/ri";
+import {  RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
 
 import Reveal from "./Reveal";
 import { Link } from "react-scroll";
+import { SiShadcnui } from "react-icons/si";
 
 const skills = [
   {
@@ -27,7 +29,10 @@ const skills = [
         name: "JavaScript",
         icon: <DiJavascript1 className="text-yellow-500" />,
       },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
+      { name: "ReactJs", icon: <DiReact className="text-blue-500" /> },
+      { name: "NextJs", icon: <RiNextjsFill className="text-white" /> },
+      { name: "ShadCn", icon: <SiShadcnui className="text-gray-300" /> },
+
     ],
   },
   {
@@ -37,6 +42,8 @@ const skills = [
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
       { name: "React", icon: <DiReact className="text-blue-500" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
+      { name: "PostgreSQL", icon: <DiPostgresql className="text-blue-600" /> },
+
     ],
   },
 ];

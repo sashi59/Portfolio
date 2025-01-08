@@ -21,7 +21,7 @@ import {
   DiReact,
   DiMongodb
 } from "react-icons/di";
-import {  RiTailwindCssLine } from "react-icons/ri";
+import {  RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
 import { TbBrandCpp } from "react-icons/tb";
 import { motion } from "framer-motion";
 
@@ -159,6 +159,8 @@ const Hero = () => {
 
         <DiNodejsSmall className="text-green-500 mx-2" />
         <DiReact className="text-blue-500 mx-2" />
+        <RiNextjsFill className="text-white mx-2" />
+
         <DiMongodb className="text-green-400 mx-2" />
         <AiOutlineGithub className="text-gray-300 mx-2" />
         <TbBrandCpp className="text-purple-600 mx-2" />

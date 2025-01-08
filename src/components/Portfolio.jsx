@@ -1,5 +1,6 @@
 import React from 'react';
 import studion_bg from "../assets/studion_bg.png"
+import aiprepmate from "../assets/aiprepmate.png"
 import twitch_bg from "../assets/tw_bg.png"
 import weather from "../assets/weather.jpg"
 import ambutrack from "../assets/am_bg.png"
@@ -8,6 +9,15 @@ import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
 
 const projects = [
+  {
+    img: aiprepmate,
+    title: "AI PrepMate",
+    description: "AI PrepMate is an innovative AI-driven platform designed to help individuals prepare for interviews and career advancements.",
+    links: {
+      site: "https://ai-prepmate.vercel.app",
+      github: "https://github.com/sashi59/AI-PrepMate",
+    },
+  },
     {
       img: studion_bg,
       title: "StudiOn LMS",
@@ -68,7 +78,7 @@ const Portfolio = () => {
                     <img
                         src={project.img}
                         alt={project.title}
-                        className={`w-full h-full object-cover rounded-lg shadow-lg ${project.setSize ? "max-h-96 max-w-52 md:mx-9":""} `}
+                        className={`w-full h-full object-cover rounded-lg shadow-lg scale-105 ${project.setSize ? "max-h-96 max-w-52 md:mx-9":""} `}
                     />
                 </div>
                 <div className='w-full md:w-1/2 p-4 flex flex-col justify-center'>
