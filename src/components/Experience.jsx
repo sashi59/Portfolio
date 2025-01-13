@@ -51,7 +51,7 @@ const Experience = () => {
                 {experience.company}
               </h2>
               <p className="text-gray-300">{experience.period}</p>
-              <p className="text-gray-400 mt-4">{experience.description}</p>
+              {/* <p className="text-gray-400 mt-4">{experience.description}</p> */}
             </motion.div>
           </Reveal>
         ))}
