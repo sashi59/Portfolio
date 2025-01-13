@@ -23,7 +23,7 @@ const experiences = [
   },
   {
     company: "IPR Head, SSIP 2.0 BVM",
-    period: "2020 - Present",
+    period: "Sept 2024 - Present",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente mollitia ut amet illo, minima ipsum.",
   },
@@ -37,7 +37,7 @@ const Experience = () => {
       </h1>
       <motion.div className="space-y-8" initial="hidden" animate="visible">
         {experiences.map((experience, index) => (
-          <Reveal>
+          <Reveal key={index}>
             <motion.div
               key={index}
               initial="hidden"
