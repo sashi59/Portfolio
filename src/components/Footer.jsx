@@ -41,8 +41,7 @@ const Footer = () => {
 
       <div className="text-gray-400 text-center">
         Copyright © {new Date().getFullYear()} <br />{" "}
-        <p className="text-center mt-1">
-          {" "}
+        <p className="text-center mt-1 text-sm md:text-md">
           All rights are reserved by Shashishekhar
         </p>
       </div>
