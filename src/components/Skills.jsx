@@ -16,6 +16,7 @@ import {  RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
 import Reveal from "./Reveal";
 import { Link } from "react-scroll";
 import { SiShadcnui } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const skills = [
   {
@@ -31,7 +32,7 @@ const skills = [
       },
       { name: "ReactJs", icon: <DiReact className="text-blue-500" /> },
       { name: "NextJs", icon: <RiNextjsFill className="text-white" /> },
-      { name: "ShadCn", icon: <SiShadcnui className="text-gray-300" /> },
+      { name: "ReactNative", icon: <TbBrandReactNative className="text-blue-300" /> },
 
     ],
   },
@@ -40,7 +41,7 @@ const skills = [
     technologies: [
       { name: "Node Js", icon: <DiNodejsSmall className="text-green-500" /> },
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
+      { name: "React Js", icon: <DiReact className="text-blue-500" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
       { name: "PostgreSQL", icon: <DiPostgresql className="text-blue-600" /> },
 

@@ -39,7 +39,7 @@ const Hero = () => {
             sequence={[
               "Fullstack Developer",
               1000,
-              "Android Developer",
+              "React Native Developer",
               1000,
               "Computer Student",
               1000,
@@ -86,7 +86,7 @@ const Hero = () => {
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-blue-400 rounded-xl"
               onClick={() => {
                 // Open a new tab to preview the resume
-                 window.open("./Resume_shashishekhar.pdf", "_blank");
+                 window.open("./Shashishekhar_Resume_WebDev.pdf", "_blank");
 
                 // // Wait for the preview tab to open before offering the download
                 // if (previewWindow) {
